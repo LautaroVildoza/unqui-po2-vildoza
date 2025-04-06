@@ -30,5 +30,8 @@ public class Punto {
 		this.setY(y);
 	}
 	
+	public int prueba() {
+		return 3;
+	}
 	
 }
