@@ -59,6 +59,28 @@ public class Counter {
 		}
 		return contador;
 	}
+	
+	public int multiplosDe(int x, int y) {
+		int mulHastaAhora = -1;
+		int mcmDeLosNros = this.mcmDe(x,y);
+		for (int i = 1; i * mcmDeLosNros <= 1000; i++) {
+			mulHastaAhora = i * mcmDeLosNros;
+		}
+		return mulHastaAhora;
+		}
+	
+	public int mcmDe(int x, int y) {
+		return Math.abs(x * y) / this.calcularMCD(x,y);
+	}
+
+	public int calcularMCD(int x, int y) {
+		while (y != 0) {
+			int temp = y;
+			y = x % y;
+			x = temp;
+		}
+		return x;
+	}
 }
 
 	
