@@ -81,6 +81,21 @@ public class Counter {
 		}
 		return x;
 	}
+	
+	/**
+	 * Punto 4: Examinando las expresiones:
+	 * 
+	 * a: error.
+	 * b: error.
+	 * c: error.
+	 * d: "ABC"
+	 * e: 5
+	 * f: 9
+	 * g: "ilm"
+	 * h: error??
+	 * i: False
+	 * j: True
+	 */
 }
 
 	
