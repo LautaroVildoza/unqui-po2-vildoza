@@ -95,6 +95,8 @@ public class Counter {
 	 * h: error??
 	 * i: False
 	 * j: True
+	 * 
+	 * Probando comit and psuh en git bash.
 	 */
 }
 
