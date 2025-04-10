@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp3.punto1;
+package ar.edu.unq.po2.tp3;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -98,6 +98,16 @@ public class Counter {
 	 * 
 	 * Probando comit and psuh en git bash.
 	 */
-}
-
 	
+	/**
+	 * Punto 5: Tipos primitivos.
+	 * 
+	 * 1: los tipos de datos primitivos son los datos que ya vienen incluidos en el lenguaje y que para utilizarlos no hay que definirlos (ya vienen definidos).
+	 * 
+	 * 2: La diferencia entre int e integer es que int es un tipo primitivo e integer es una clase sobre un int estos se usan generalemnte para array.
+	 * 
+	 * 3: int = 0 y integer = null
+	 * 
+	 */
+
+}

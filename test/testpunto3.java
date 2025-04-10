@@ -2,7 +2,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import ar.edu.unq.po2.tp3.punto1.Counter;
+import ar.edu.unq.po2.tp3.Counter;
 
 import org.junit.jupiter.api.BeforeEach;
 

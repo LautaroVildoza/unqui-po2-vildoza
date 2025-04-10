@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp3.punto1;
+package ar.edu.unq.po2.tp3;
 
 public class Punto {
 	private float x;
