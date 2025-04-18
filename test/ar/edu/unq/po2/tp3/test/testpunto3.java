@@ -1,3 +1,4 @@
+package ar.edu.unq.po2.tp3.test;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
@@ -6,7 +7,7 @@ import ar.edu.unq.po2.tp3.Counter;
 
 import org.junit.jupiter.api.BeforeEach;
 
-public class testpunto2 {
+public class testpunto3 {
 private Counter counter;
 /**
 * Crea un escenario de test básico, que consiste en un contador
@@ -34,8 +35,8 @@ public void setUp() throws Exception {
 @Test
 public void testEvenNumbers() {
 // Getting the even occurrences
-	int amount = counter.numCanMaxDePares();
+	int amount = counter.multiplosDe(7, 5);
 // I check the amount is the expected one
-assertEquals(amount, 42, "No anda numCanMaxDePares");
+assertEquals(amount, 980, "No anda multiplosDe");
 	}
 }

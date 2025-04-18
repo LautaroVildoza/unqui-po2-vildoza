@@ -1,3 +1,4 @@
+package ar.edu.unq.po2.tp3.test;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -5,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import ar.edu.unq.po2.tp3.Multioperador;
 
-public class testmultioperador3 {
+public class testmultioperador2 {
 private Multioperador multioperador;
 
 @BeforeEach
@@ -24,8 +25,8 @@ public void setUp() throws Exception {
 @Test
 public void testSumaMulti() {
 // Getting the even occurrences
-	int amount = multioperador.multiplicar();
+	int amount = multioperador.resta();
 // I check the amount is the expected one
-assertEquals(amount, 1890, "No anda multiplicar");
+assertEquals(amount, -26, "No anda multiplicar");
 	}
 }
