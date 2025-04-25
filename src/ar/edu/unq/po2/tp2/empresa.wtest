@@ -1,0 +1,34 @@
+import empresa.*
+
+describe "Punto1" {
+    const casado = new Casado()
+    const viudo = new Viudo()
+    const lucas = new Permanente(nombre="lucas", direccion="rivadavia", estadoCivil = casado, fechaDeNacimiento= new Date(day=1, month=2, year=1999), sueldoBasico=20000, cantHijos= 2, antiguedad= 5)
+    const alberto = new Permanente(nombre="alberto", direccion="moreno", estadoCivil = casado, fechaDeNacimiento= new Date(day=12, month=5, year=1960), sueldoBasico=210000, cantHijos= 2, antiguedad= 30)
+    const maria = new Temporario(nombre="maria", direccion="contreras", estadoCivil = new Soltero(), fechaDeNacimiento= new Date(day=16, month=7, year=2002), sueldoBasico=40000, fechaDeDesignacion= new Date(day=1, month=6, year=2020), cantHsExtras= 5)
+    const pedro = new Contratado(nombre="pedro", direccion="ayacucho", estadoCivil = viudo, fechaDeNacimiento= new Date(day=21, month=5, year=1992), sueldoBasico=300000, numeroContrato = "27339", medioDePago = "Efectivo")
+    const microsoft = new Empresa(cuit=2222222, nombre= "microsoft", fechaAct= new Date(day=20, month=3, year=2025), recibos=[])
+  test "calculo del total de sueldos netos" {
+    microsoft.agregarEmpleado(lucas)
+    microsoft.agregarEmpleado(alberto)
+    microsoft.agregarEmpleado(maria)
+    assert.equals(206467.5, microsoft.totalPagoSueldo())
+  }
+
+  test "liquidacion de sueldo" {
+    microsoft.agregarEmpleado(lucas)
+    microsoft.agregarEmpleado(alberto)
+    microsoft.agregarEmpleado(maria)
+    microsoft.liquidarSueldos()
+    assert.equals(3, microsoft.recibos().size())
+  }
+
+  test "empleados contratados" {
+    microsoft.agregarEmpleado(lucas)
+    microsoft.agregarEmpleado(alberto)
+    microsoft.agregarEmpleado(maria)
+    microsoft.agregarEmpleado(pedro)
+    assert.equals(506417.5, microsoft.totalPagoSueldo())
+  }
+}
+
