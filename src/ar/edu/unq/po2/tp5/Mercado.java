@@ -3,6 +3,9 @@ package ar.edu.unq.po2.tp5;
 import java.util.ArrayList;
 import java.util.List;
 
+import ar.edu.unq.po2.tp5.producto.Producto;
+//dejo por las dudas
+
 public class Mercado {
 	private String nombre;
 	private List<Producto> productos = new ArrayList<Producto>();

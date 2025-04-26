@@ -6,10 +6,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import ar.edu.unq.po2.tp5.Caja;
-import ar.edu.unq.po2.tp5.Cooperativa;
-import ar.edu.unq.po2.tp5.Producto;
+import ar.edu.unq.po2.tp5.producto.Cooperativa;
+import ar.edu.unq.po2.tp5.producto.Producto;
 
-class CajaTestCase1 {
+class CajaTestCaseP1 {
 	
 		Producto arroz;
 		Producto fideos;
@@ -33,29 +33,29 @@ class CajaTestCase1 {
 
 		@Test
 		void testRegistraProdcutoSinStock() {
-			caja1.registrar(burrata);
+			caja1.registrarCobrable(burrata);
 			assertEquals(0, caja1.getMontoAPagar());
 		}
 
 		@Test
 		void testRegistraPrductoConStock() {
-			caja1.registrar(burrata);
-			caja1.registrar(carne);
+			caja1.registrarCobrable(burrata);
+			caja1.registrarCobrable(carne);
 			assertEquals(15000, caja1.getMontoAPagar());
 		}
 
 		@Test
 		void testRegistraPrductoDeCooperativa() {
-			caja1.registrar(fideos);
+			caja1.registrarCobrable(fideos);
 			assertEquals(900, caja1.getMontoAPagar());
 		}
 		
 		@Test
 		void testCompraTodosLosProductos() {
-			caja1.registrar(fideos);
-			caja1.registrar(carne);
-			caja1.registrar(arroz);
-			caja1.registrar(burrata);
+			caja1.registrarCobrable(fideos);
+			caja1.registrarCobrable(carne);
+			caja1.registrarCobrable(arroz);
+			caja1.registrarCobrable(burrata);
 			assertEquals(17880, caja1.getMontoAPagar());
 		}
 }
