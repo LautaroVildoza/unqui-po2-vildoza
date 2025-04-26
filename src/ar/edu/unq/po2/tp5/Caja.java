@@ -3,10 +3,10 @@ package ar.edu.unq.po2.tp5;
 import java.util.ArrayList;
 import java.util.List;
 
-import ar.edu.unq.po2.tp5.interfaces.Agencia;
+
 import ar.edu.unq.po2.tp5.interfaces.Cobrable;
 
-public class Caja implements Agencia{
+public class Caja {
 	private String nombre;
 	private int numero;
 	private double montoAPagar = 0;
@@ -24,7 +24,7 @@ public class Caja implements Agencia{
 		return montoAPagar;
 	}
 
-	public void setMontoAPagar(double montoAPagar) {
+	private void setMontoAPagar(double montoAPagar) {
 		this.montoAPagar = montoAPagar;
 	}
 	
@@ -39,22 +39,6 @@ public class Caja implements Agencia{
 			this.setMontoAPagar(this.getMontoAPagar() + c.getMontoAPagar());
 		}
 	}
-
-	public String getNombre() {
-		return nombre;
-	}
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
-	public int getNumero() {
-		return numero;
-	}
-
-	public void setNumero(int numero) {
-		this.numero = numero;
-	}	
 	
 	/**
 	 * Me devuelve la cantidad de Cobrables registrados en la caja.

@@ -13,20 +13,13 @@ public class FacturaServicio extends Factura{
 		return this.getCostoPorUnidad() * this.getCantUnidadesConsumidas();
 	}
 
-	public double getCostoPorUnidad() {
+	private double getCostoPorUnidad() {
 		return costoPorUnidad;
 	}
 
-	public void setCostoPorUnidad(int costoPorUnidad) {
-		this.costoPorUnidad = costoPorUnidad;
-	}
 
-	public double getCantUnidadesConsumidas() {
+	private double getCantUnidadesConsumidas() {
 		return cantUnidadesConsumidas;
-	}
-
-	public void setCantUnidadesConsumidas(int cantUnidadesConsumidas) {
-		this.cantUnidadesConsumidas = cantUnidadesConsumidas;
 	}
 
 	public FacturaServicio(double costoPorUnidad, double cantUnidadesConsumidas) {
