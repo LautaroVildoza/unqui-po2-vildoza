@@ -1,6 +1,6 @@
 package ar.edu.unq.po2.tp6;
 
-public abstract  class Credito {
+public abstract  class Credito implements ICredito{
 	private Cliente clienteSolicitante;
 	private double montoSolicitado;
 	private int plazoEnMeses;

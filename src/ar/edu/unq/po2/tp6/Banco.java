@@ -3,7 +3,7 @@ package ar.edu.unq.po2.tp6;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Banco {
+public class Banco implements IBanco{
 	private String nombre;
 	private double dineroTotal;
 	private List<Credito> creditosAprobados = new ArrayList<Credito>();
