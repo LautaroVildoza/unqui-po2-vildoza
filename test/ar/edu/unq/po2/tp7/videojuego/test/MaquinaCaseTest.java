@@ -5,24 +5,16 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import ar.edu.unq.po2.tp7.videojuego.Dosfichas;
 import ar.edu.unq.po2.tp7.videojuego.IEstadoMaquina;
 import ar.edu.unq.po2.tp7.videojuego.Maquina;
 import ar.edu.unq.po2.tp7.videojuego.Sinficha;
-import ar.edu.unq.po2.tp7.videojuego.Unaficha;
-
 class MaquinaCaseTest {
 
 	Maquina fichines;
 	IEstadoMaquina sinfichas;
-	IEstadoMaquina dosfichas;
-	IEstadoMaquina unaficha;
-	
 	@BeforeEach
 	public void setUp() {
 		sinfichas = new Sinficha();
-		unaficha = new Unaficha();
-		dosfichas = new Dosfichas();
 		fichines = new Maquina(sinfichas);	
 		
 	}
