@@ -40,11 +40,11 @@ public class Reproductor {
 	}
 
 	public String play() {
-		return this.getEstadoRepro().play(this.getCancionSeleccionada());
+		return this.getEstadoRepro().play(this.getCancionSeleccionada(), this);
 	}
 	
 	public String pause() {
-		return this.getEstadoRepro().pause(this.getCancionSeleccionada());
+		return this.getEstadoRepro().pause(this.getCancionSeleccionada(), this);
 	}
 	
 	public String stop() {

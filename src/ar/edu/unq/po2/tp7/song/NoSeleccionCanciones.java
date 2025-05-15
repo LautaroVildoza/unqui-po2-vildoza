@@ -3,12 +3,12 @@ package ar.edu.unq.po2.tp7.song;
 public class NoSeleccionCanciones implements IEstadoReprodcutor{
 
 	@Override
-	public String play(Song s) {
+	public String play(Song s, Reproductor r) {
 		return "Error";
 	}
 
 	@Override
-	public String pause(Song s) {
+	public String pause(Song s, Reproductor r) {
 
 		return s.pause();
 	}

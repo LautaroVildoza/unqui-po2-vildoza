@@ -3,18 +3,19 @@ package ar.edu.unq.po2.tp7.song;
 public class SeleccionCanciones implements IEstadoReprodcutor{
 
 	@Override
-	public String play(Song s) {
+	public String play(Song s, Reproductor r) {
 		return s.play();
 	}
 
 	@Override
-	public String pause(Song s) {
-		// TODO Auto-generated method stub
+	public String pause(Song s, Reproductor r) {
+		
 		return s.pause();
 	}
 
 	@Override
 	public String stop(Song s, Reproductor r) {
+		this.cambiarEstado(r);
 		return s.stop();
 	}
 
@@ -26,5 +27,9 @@ public class SeleccionCanciones implements IEstadoReprodcutor{
 	@Override
 	public boolean puedeAgregar(){
 		return true;
+	}
+	
+	private void  cambiarEstado(Reproductor r) {
+		r.setEstadoRepro(new NoSeleccionCanciones());
 	}
 }
